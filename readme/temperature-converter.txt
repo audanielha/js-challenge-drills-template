@@ -1,0 +1,23 @@
+Challenge: Temperature Converter
+
+Objective: Create a JavaScript program that converts temperatures between Celsius and Fahrenheit.
+
+Instructions:
+
+Declare a variable to store a temperature in Celsius (e.g., let celsius = 25;).
+
+Write a function celsiusToFahrenheit that takes the Celsius temperature as an argument and returns the equivalent Fahrenheit temperature. Use the formula: Fahrenheit = (Celsius * 9/5) + 32.
+
+Declare another variable to store a temperature in Fahrenheit (e.g., let fahrenheit = 77;).
+
+Write a function fahrenheitToCelsius that takes the Fahrenheit temperature as an argument and returns the equivalent Celsius temperature. Use the formula: Celsius = (Fahrenheit - 32) * 5/9.
+
+Output:
+
+Use console.log to display the conversion results. For example: "25°C is equivalent to 77°F" and "77°F is equivalent to 25°C".
+
+Bonus:
+
+Add input validation to ensure that the temperatures provided are numbers.
+
+Create a function that prompts the user to enter a temperature and the conversion type (Celsius to Fahrenheit or vice versa), performs the conversion, and displays the result.
