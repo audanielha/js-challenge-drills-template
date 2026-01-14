@@ -25,4 +25,11 @@ let currentItems = (items) =>{
     shoppingCart.length === 0 ? items = "No items in card." : items = shoppingCart.join(", ");
     console.log(`Current items in cart: ${items}`);
 }
+
+let totalItems = () =>{
+    
+    console.log(`Total items in cart: ${shoppingCart.length}`);
+}
+
+totalItems();
 currentItems();
