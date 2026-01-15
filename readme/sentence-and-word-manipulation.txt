@@ -1,0 +1,35 @@
+Sure! Here's a challenge that will help you practice working with both mutable and immutable data types in JavaScript. The challenge involves manipulating a string and an array.
+
+Challenge: Sentence and Word Manipulation
+Objective: Write a function that takes a sentence (string) and a word (string) as inputs. The function should add the word to the start of the sentence and to each position in an array of words extracted from the sentence. Return both the new sentence and the modified array.
+
+Steps:
+Extract Words: Split the sentence into an array of words.
+
+Modify the Sentence: Add the word to the start of the sentence.
+
+Modify the Array: Add the word to the start of each word in the array.
+
+Return the Result: Return an object containing the new sentence and the modified array.
+
+Example:
+
+
+function manipulateSentence(sentence, word) {
+    // Your implementation here
+}
+// Sample Input
+const inputSentence = "JavaScript is fun";
+const inputWord = "Awesome";
+// Expected Output
+// {
+//   newSentence: "Awesome JavaScript is fun",
+//   modifiedArray: ["AwesomeJavaScript", "Awesomeis", "Awesomefun"]
+// }
+const result = manipulateSentence(inputSentence, inputWord);
+console.log(result);
+Hints:
+
+Use string methods like split() and concat() to manipulate strings.
+
+Use array methods like map() to modify each element in the array of words.
