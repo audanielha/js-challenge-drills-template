@@ -1,11 +1,17 @@
 
 function manipulateSentence(sentence, word) {
     // Your implementation here
-    console.log(sentence, word)
+    let splitSentence = [...sentence.split(" ")]
 
+    let modifiedArray = [splitSentence.map(()=>{
+        for(let i = 0; i < splitSentence.length; i++){
+           return (word.concat(splitSentence[i]))
+        }
+    })]
+    return modifiedArray;
 }
 // Sample Input
-const inputSentence = "JavaScript is fun";
+const inputSentence = "JavaScript is fun test";
 const inputWord = "Awesome";
 // Expected Output
 // {
