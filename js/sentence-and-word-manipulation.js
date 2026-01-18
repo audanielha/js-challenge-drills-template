@@ -2,7 +2,6 @@
 function manipulateSentence(sentence, word) {
     // Your implementation here
     let splitSentence = sentence.split(" ");
-
     let modifiedItems = splitSentence.map(item => word.concat(item));
     return modifiedItems
 }

@@ -1,0 +1,62 @@
+Challenge: Inventory Management
+Objective: Create a function that manages an inventory of items. The function should take an array of objects representing items, and an action object specifying what to do with the inventory. The function should return the updated inventory.
+
+Inventory Item Structure:
+Each item in the inventory is an object with the following properties:
+
+name: The name of the item (string).
+
+quantity: The quantity of the item in stock (number).
+
+Action Structure:
+The action object has the following properties:
+
+type: The type of action to perform (string). It can be either "add" or "remove".
+
+item: An object representing the item to add or remove, with name and quantity properties.
+
+Steps:
+Add Action: If the action type is "add", increase the quantity of the specified item by the amount given. If the item does not exist, add it to the inventory.
+
+Remove Action: If the action type is "remove", decrease the quantity of the specified item by the amount given. If the quantity falls to zero or below, remove the item from the inventory entirely.
+
+Return the Updated Inventory: After performing the action, return the updated inventory array.
+
+Example:
+
+
+function manageInventory(inventory, action) {
+    // Your implementation here
+}
+// Sample Input
+const initialInventory = [
+    { name: "apple", quantity: 10 },
+    { name: "banana", quantity: 5 }
+];
+const addAction = {
+    type: "add",
+    item: { name: "orange", quantity: 7 }
+};
+const removeAction = {
+    type: "remove",
+    item: { name: "banana", quantity: 5 }
+};
+// Expected Output
+// After addAction: [
+//   { name: "apple", quantity: 10 },
+//   { name: "banana", quantity: 5 },
+//   { name: "orange", quantity: 7 }
+// ]
+// After removeAction: [
+//   { name: "apple", quantity: 10 },
+//   { name: "orange", quantity: 7 }
+// ]
+const updatedInventoryAfterAdd = manageInventory(initialInventory, addAction);
+console.log(updatedInventoryAfterAdd);
+const updatedInventoryAfterRemove = manageInventory(updatedInventoryAfterAdd, removeAction);
+console.log(updatedInventoryAfterRemove);
+Hints:
+
+Use array methods like find() or findIndex() to locate items in the inventory.
+
+Consider edge cases, such as trying to remove more items than are in stock.
