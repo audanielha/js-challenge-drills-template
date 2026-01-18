@@ -1,5 +1,9 @@
 function manageInventory(inventory, action) {
     // Your implementation here
+    if(action.type === "add"){
+        inventory.push(action.item)
+    }
+    console.log(inventory)
 }
 // Sample Input
 const initialInventory = [
